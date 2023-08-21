@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Selenium Test Automation Test Suite">
+
+	<listeners>
+		<listener class-name="com.demo.utilities.GenerateExtentReport" />
+	</listeners>
+
+
+	<test name="Demo App Test Cases">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<!--<class name="com.demo.testCases.LoginTest"></class>
+			<class name="com.demo.testCases.LoginNumberOfData"></class>
+			<class name="com.demo.testCases.LoginDDT"></class>-->
+			<class name="com.demo.testCases.AddNewCustomerTest"></class>
+		</classes>
+	</test>
+
+</suite>

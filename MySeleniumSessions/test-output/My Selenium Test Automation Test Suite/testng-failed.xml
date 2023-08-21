@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [My Selenium Test Automation Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.demo.utilities.GenerateExtentReport"/>
+  </listeners>
+  <test name="Demo App Test Cases(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.demo.testCases.LoginNumberOfData">
+        <methods>
+          <include name="loginWithDatas" invocation-numbers="1 3 5"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.demo.testCases.LoginNumberOfData -->
+    </classes>
+  </test> <!-- Demo App Test Cases(failed) -->
+</suite> <!-- Failed suite [My Selenium Test Automation Test Suite] -->
